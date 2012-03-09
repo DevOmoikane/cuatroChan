@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630EB31D150AC27A006C20A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630EB31C150AC27A006C20A4 /* Cocoa.framework */; };
+		630EB327150AC27A006C20A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 630EB325150AC27A006C20A4 /* InfoPlist.strings */; };
+		630EB329150AC27A006C20A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 630EB328150AC27A006C20A4 /* main.m */; };
+		630EB32D150AC27A006C20A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 630EB32B150AC27A006C20A4 /* Credits.rtf */; };
+		630EB330150AC27A006C20A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 630EB32F150AC27A006C20A4 /* AppDelegate.m */; };
+		630EB333150AC27A006C20A4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630EB331150AC27A006C20A4 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		630EB318150AC27A006C20A4 /* cuatroChan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cuatroChan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630EB31C150AC27A006C20A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		630EB31F150AC27A006C20A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		630EB320150AC27A006C20A4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		630EB321150AC27A006C20A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		630EB324150AC27A006C20A4 /* cuatroChan-Info.plist */ = {isa = PBXFileReference; path = "cuatroChan-Info.plist"; sourceTree = "<group>"; };
+		630EB326150AC27A006C20A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		630EB328150AC27A006C20A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		630EB32A150AC27A006C20A4 /* cuatroChan-Prefix.pch */ = {isa = PBXFileReference; path = "cuatroChan-Prefix.pch"; sourceTree = "<group>"; };
+		630EB32C150AC27A006C20A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		630EB32E150AC27A006C20A4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		630EB32F150AC27A006C20A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		630EB332150AC27A006C20A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630EB315150AC27A006C20A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630EB31D150AC27A006C20A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630EB30D150AC27A006C20A4 = {
+			isa = PBXGroup;
+			children = (
+				630EB322150AC27A006C20A4 /* cuatroChan */,
+				630EB31B150AC27A006C20A4 /* Frameworks */,
+				630EB319150AC27A006C20A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		630EB319150AC27A006C20A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630EB318150AC27A006C20A4 /* cuatroChan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630EB31B150AC27A006C20A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				630EB31C150AC27A006C20A4 /* Cocoa.framework */,
+				630EB31E150AC27A006C20A4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630EB31E150AC27A006C20A4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				630EB31F150AC27A006C20A4 /* AppKit.framework */,
+				630EB320150AC27A006C20A4 /* CoreData.framework */,
+				630EB321150AC27A006C20A4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		630EB322150AC27A006C20A4 /* cuatroChan */ = {
+			isa = PBXGroup;
+			children = (
+				630EB32E150AC27A006C20A4 /* AppDelegate.h */,
+				630EB32F150AC27A006C20A4 /* AppDelegate.m */,
+				630EB331150AC27A006C20A4 /* MainMenu.xib */,
+				630EB323150AC27A006C20A4 /* Supporting Files */,
+			);
+			path = cuatroChan;
+			sourceTree = "<group>";
+		};
+		630EB323150AC27A006C20A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				630EB324150AC27A006C20A4 /* cuatroChan-Info.plist */,
+				630EB325150AC27A006C20A4 /* InfoPlist.strings */,
+				630EB328150AC27A006C20A4 /* main.m */,
+				630EB32A150AC27A006C20A4 /* cuatroChan-Prefix.pch */,
+				630EB32B150AC27A006C20A4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630EB317150AC27A006C20A4 /* cuatroChan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630EB336150AC27A006C20A4 /* Build configuration list for PBXNativeTarget "cuatroChan" */;
+			buildPhases = (
+				630EB314150AC27A006C20A4 /* Sources */,
+				630EB315150AC27A006C20A4 /* Frameworks */,
+				630EB316150AC27A006C20A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cuatroChan;
+			productName = cuatroChan;
+			productReference = 630EB318150AC27A006C20A4 /* cuatroChan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630EB30F150AC27A006C20A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 630EB312150AC27A006C20A4 /* Build configuration list for PBXProject "cuatroChan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 630EB30D150AC27A006C20A4;
+			productRefGroup = 630EB319150AC27A006C20A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630EB317150AC27A006C20A4 /* cuatroChan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630EB316150AC27A006C20A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630EB327150AC27A006C20A4 /* InfoPlist.strings in Resources */,
+				630EB32D150AC27A006C20A4 /* Credits.rtf in Resources */,
+				630EB333150AC27A006C20A4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630EB314150AC27A006C20A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630EB329150AC27A006C20A4 /* main.m in Sources */,
+				630EB330150AC27A006C20A4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		630EB325150AC27A006C20A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630EB326150AC27A006C20A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		630EB32B150AC27A006C20A4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630EB32C150AC27A006C20A4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		630EB331150AC27A006C20A4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630EB332150AC27A006C20A4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		630EB334150AC27A006C20A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		630EB335150AC27A006C20A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		630EB337150AC27A006C20A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cuatroChan/cuatroChan-Prefix.pch";
+				INFOPLIST_FILE = "cuatroChan/cuatroChan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		630EB338150AC27A006C20A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cuatroChan/cuatroChan-Prefix.pch";
+				INFOPLIST_FILE = "cuatroChan/cuatroChan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630EB312150AC27A006C20A4 /* Build configuration list for PBXProject "cuatroChan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630EB334150AC27A006C20A4 /* Debug */,
+				630EB335150AC27A006C20A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630EB336150AC27A006C20A4 /* Build configuration list for PBXNativeTarget "cuatroChan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630EB337150AC27A006C20A4 /* Debug */,
+				630EB338150AC27A006C20A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630EB30F150AC27A006C20A4 /* Project object */;
+}
