@@ -1,0 +1,22 @@
+==== cuatroChan ====
+Developer: Israel Cabrera "Dev Omoikane"
+Tags: image, download, viewer, 4chan
+OS: MAC 10.6
+
+This application will provide a way to see and download only the images from the page 4chan, from the main channels.
+
+This is a work in progress.
+
+Changelog:
+
+v 0.1.1
++ First working version of the application
++ it downloads all the images in all the selected channel (only thumbs)
++ you can download the high resolution image by double clicking the thumb
+
+
+Frameworks Used:
+libz
+libxml2
+RegexKit.framework
+
