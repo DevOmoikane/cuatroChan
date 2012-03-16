@@ -29,6 +29,7 @@
 @synthesize cellSize, desiredNumberOfColumns, desiredNumberOfRows;
 @synthesize dataSource, delegate;
 @synthesize unselectOnMouseUp, allowsSelection, allowsMultipleSelection;
+@synthesize padSize;
 
 #pragma mark -
 #pragma mark Selection
@@ -145,7 +146,7 @@
     if(point.x < 0.0 || point.y < 0.0 || point.x >= boundsSize.width || point.y >= boundsSize.height)
         return NSNotFound;
     
-    point = NSMakePoint(floor(point.x / cellSize.width), floor(point.y / cellSize.height));    
+    point = NSMakePoint(floor(point.x / (cellSize.width+padSize)), floor(point.y / (cellSize.height+padSize)));    
     NSUInteger index = (point.y * numberOfColumns) + point.x;
     
     return index;
@@ -184,7 +185,7 @@
     NSUInteger x = index % numberOfColumns;
     NSUInteger y = (index - x) / numberOfColumns;
     
-    return NSMakeRect(x * cellSize.width, y * cellSize.height, cellSize.width, cellSize.height);
+    return NSMakeRect(x * (cellSize.width+padSize), y * (cellSize.height+padSize), cellSize.width, cellSize.height);
 }
 
 - (NSIndexSet *)indexesOfCellsInRect:(NSRect)rect
@@ -342,17 +343,17 @@
 - (NSRange)visibleRange
 {
     NSRect rect = [self visibleRect];
-    rect.origin.y -= cellSize.height;
-    rect.size.height += (cellSize.height * 2);
+    rect.origin.y -= (cellSize.height+padSize);
+    rect.size.height += ((cellSize.height+padSize) * 2);
     
     if(rect.origin.y < 0.0)
         rect.origin.y = 0.0;
     
-    NSInteger rows = rect.origin.y / cellSize.height;
+    NSInteger rows = rect.origin.y / (cellSize.height+padSize);
     NSInteger startIndex = rows * numberOfColumns;
     NSInteger endIndex = 0;
     
-    rows = (rect.origin.y + rect.size.height) / cellSize.height;
+    rows = (rect.origin.y + rect.size.height) / (cellSize.height+padSize);
     endIndex = rows * numberOfColumns;
     endIndex = MIN(numberOfCells, endIndex);
     
@@ -370,25 +371,25 @@
     // Calculate new boundaries for the view...
     if(desiredNumberOfColumns == NSUIntegerMax)
     {
-        numberOfColumns = MAX(1, floor(frame.size.width / cellSize.width));
+        numberOfColumns = MAX(1, floor(frame.size.width / (cellSize.width+padSize)));
         width = frame.size.width;
     }
     else
     {
         numberOfColumns = desiredNumberOfColumns;
-        width = numberOfColumns * cellSize.width;
+        width = numberOfColumns * (cellSize.width+padSize);
     }
     
     
     if(desiredNumberOfRows == NSUIntegerMax && numberOfColumns > 0)
     {
         numberOfRows = MAX(1, ceil((float)(numberOfCells / numberOfColumns)));
-        height = numberOfRows * cellSize.height; 
+        height = numberOfRows * (cellSize.height+padSize); 
     }
     else
     {
         numberOfRows = desiredNumberOfRows;
-        height = numberOfRows * cellSize.height; 
+        height = numberOfRows * (cellSize.height+padSize); 
     }
     
     
@@ -469,6 +470,7 @@
 	lastHoverCellIndex = -1;
     
     cellSize = NSMakeSize(32.0, 32.0);
+    padSize = 0;
 	
 	NSTrackingArea *area = [[NSTrackingArea alloc] initWithRect:[self frame] 
 														options:(NSTrackingMouseEnteredAndExited | NSTrackingActiveAlways | NSTrackingInVisibleRect)

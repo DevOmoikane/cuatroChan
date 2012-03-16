@@ -14,6 +14,8 @@
 //  FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
 //  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+//  Modification:
+//    + added padding
 
 #import <Cocoa/Cocoa.h>
 #import "JUCollectionViewCell.h"
@@ -38,6 +40,7 @@
     NSUInteger numberOfCells;
     NSSize cellSize;
 	NSUInteger lastHoverCellIndex;
+    NSUInteger padSize;
     
     NSMutableDictionary *reusableCellQueues;
     NSMutableDictionary *visibleCells;
@@ -49,6 +52,7 @@
     BOOL updatingData, calledReloadData;
 }
 
+@property (nonatomic, assign) NSUInteger padSize;
 /**
  * The size of one cell. Each cell shares the very same size.
  **/

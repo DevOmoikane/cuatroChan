@@ -99,7 +99,7 @@
     if((self = [super initWithFrame:NSZeroRect]))
     {
         cellIdentifier  = [identifier retain];
-        selectionColor  = [[NSColor blackColor] retain];
+        selectionColor  = [[NSColor blueColor] retain];
         drawSelection   = YES;
     }
     

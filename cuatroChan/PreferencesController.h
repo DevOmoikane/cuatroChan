@@ -8,6 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PreferencesController : NSWindowController
+@interface PreferencesController : NSWindowController {
+    
+    IBOutlet NSTabView *tabView;
+    IBOutlet NSPathControl *generalPath;
+    IBOutlet NSPathControl *pronPath;
+    
+    NSString *generalPathString;
+    NSString *pronPathString;
+}
+- (IBAction)showPreferencesTab:(id)sender;
+- (IBAction)showPathsTab:(id)sender;
+- (IBAction)showAdvancedTab:(id)sender;
+- (IBAction)changedValues:(id)sender;
 
 @end
