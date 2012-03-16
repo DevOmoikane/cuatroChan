@@ -74,6 +74,7 @@
 		6323B45215102B3E001F9A00 /* JUCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUCollectionViewCell.m; sourceTree = "<group>"; };
 		6323B45315102B3E001F9A00 /* JUCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUCollectionViewDelegate.h; sourceTree = "<group>"; };
 		6382A7C7151057FF00DC9F7A /* RegexKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RegexKit.framework; path = Local/Frameworks/RegexKit.framework; sourceTree = DEVELOPER_DIR; };
+		63DAA60E1512C09A002AE88E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
 		63FFC683150B133600FBFE76 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
 		63FFC684150B133600FBFE76 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
 		63FFC685150B133600FBFE76 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		630EB323150AC27A006C20A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63DAA60E1512C09A002AE88E /* README */,
 				630EB324150AC27A006C20A4 /* cuatroChan-Info.plist */,
 				630EB325150AC27A006C20A4 /* InfoPlist.strings */,
 				630EB328150AC27A006C20A4 /* main.m */,
